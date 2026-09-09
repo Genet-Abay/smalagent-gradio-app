@@ -83,7 +83,7 @@ agent = CodeAgent(
     tools=[final_answer, get_current_time_in_timezone, get_weather],
     max_steps=6,
     verbosity_level=1,
-    prompt_templates=prompt_templates
+    prompt_templates=prompt_templates,
     instructions="""Always assign tool outputs to variables and print them (e.g., `weather_info = get_weather('Brussels'); print(weather_info)`). 
     Once you have the answer, call `final_answer(weather_info)` immediately."""
 )
